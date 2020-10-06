@@ -38,10 +38,9 @@ env:
 - name: APP_URL
   label: APP_URL
   default: reverse proxy domain here.
-
 type: 1
-title: Bookstack
-name: bookstack
+title: Food
+name: food
 description: BookStack is a simple, self-hosted, easy-to-use platform for organising and storing information. The default username is admin@admin.com with the password of password
 logo: https://s3-us-west-2.amazonaws.com/linuxserver-docs/images/bookstack-logo500x500.png
 image: linuxserver/bookstack:latest
