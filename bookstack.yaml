@@ -2,7 +2,7 @@
 type: 1
 title: Bookstack
 name: bookstack
-description: BookStack is a simple, self-hosted, easy-to-use platform for organising and storing information.
+description: BookStack is a simple, self-hosted, easy-to-use platform for organising and storing information. The default username is admin@admin.com with the password of password
 logo: https://s3-us-west-2.amazonaws.com/linuxserver-docs/images/bookstack-logo500x500.png
 image: linuxserver/bookstack:latest
 note: The default username is admin@admin.com with the password of password, access the container at http://dockerhost:6875.
