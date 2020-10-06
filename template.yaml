@@ -23,7 +23,18 @@ env:
 - name: PGID
   label: PGID
   default: '1000'
-- name: EnvWithDescription
-  label: EnvWithDescription
-  description: This is a description
-  default: default
+- name: DB_HOST
+  label: DB_HOST
+  default: 0.0.0.0:3306
+- name: DB_USER
+  label: DB_USER
+  default: bookstack
+- name: DB_PASS
+  label: DB_PASS
+  default: bookstack
+- name: DB_DATABASE
+  label: DB_DATABASE
+  default: bookstackapp
+- name: APP_URL
+  label: APP_URL
+  default: reverse proxy domain here
