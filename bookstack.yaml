@@ -37,4 +37,4 @@ env:
   default: bookstackapp
 - name: APP_URL
   label: APP_URL
-  default: reverse proxy domain here
+  default: reverse proxy domain here.
