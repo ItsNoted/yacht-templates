@@ -12,8 +12,7 @@ categories:
 platform: linux
 restart_policy: unless-stopped
 ports:
-- 9091:9091/tcp
-- 9090:9090/tcp
+- 6875:80/tcp
 volumes:
 - container: "/data"
   bind: "!downloads"
