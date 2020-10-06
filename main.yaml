@@ -1,79 +1,79 @@
 ---
 - type: 1
-title: Bookstack
-name: bookstack
-description: BookStack is a simple, self-hosted, easy-to-use platform for organising and storing information. The default username is admin@admin.com with the password of password
-logo: https://s3-us-west-2.amazonaws.com/linuxserver-docs/images/bookstack-logo500x500.png
-image: linuxserver/bookstack:latest
-note: The default username is admin@admin.com with the password of password, access the container at http://dockerhost:6875.
-categories:
-- Other
-- Tools
-platform: linux
-restart_policy: unless-stopped
-ports:
-- 6875:80/tcp
-volumes:
-- container: "/config"
+  title: Bookstack
+  name: bookstack
+  description: BookStack is a simple, self-hosted, easy-to-use platform for organising and storing information. The default username is admin@admin.com with the password of password
+  logo: https://s3-us-west-2.amazonaws.com/linuxserver-docs/images/bookstack-logo500x500.png
+  image: linuxserver/bookstack:latest
+  note: The default username is admin@admin.com with the password of password, access the container at http://dockerhost:6875.
+  categories:
+  - Other
+  - Tools
+  platform: linux
+  restart_policy: unless-stopped
+  ports:
+  - 6875:80/tcp
+  volumes:
+  - container: "/config"
   bind: "!config"
-env:
-- name: PUID
+  env:
+  - name: PUID
   label: PUID
   default: '1000'
-- name: PGID
+  - name: PGID
   label: PGID
   default: '1000'
-- name: DB_HOST
+  - name: DB_HOST
   label: DB_HOST
   default: 0.0.0.0:3306
-- name: DB_USER
+  - name: DB_USER
   label: DB_USER
   default: bookstack
-- name: DB_PASS
+  - name: DB_PASS
   label: DB_PASS
   default: bookstack
-- name: DB_DATABASE
+  - name: DB_DATABASE
   label: DB_DATABASE
   default: bookstackapp
-- name: APP_URL
+  - name: APP_URL
   label: APP_URL
   default: reverse proxy domain here.
 - type: 1
-title: Food
-name: food
-description: BookStack is a simple, self-hosted, easy-to-use platform for organising and storing information. The default username is admin@admin.com with the password of password
-logo: https://s3-us-west-2.amazonaws.com/linuxserver-docs/images/bookstack-logo500x500.png
-image: linuxserver/bookstack:latest
-note: The default username is admin@admin.com with the password of password, access the container at http://dockerhost:6875.
-categories:
-- Other
-- Tools
-platform: linux
-restart_policy: unless-stopped
-ports:
-- 6875:80/tcp
-volumes:
-- container: "/config"
+  title: Food
+  name: food
+  description: BookStack is a simple, self-hosted, easy-to-use platform for organising and storing information. The default username is admin@admin.com with the password of password
+  logo: https://s3-us-west-2.amazonaws.com/linuxserver-docs/images/bookstack-logo500x500.png
+  image: linuxserver/bookstack:latest
+  note: The default username is admin@admin.com with the password of password, access the container at http://dockerhost:6875.
+  categories:
+  - Other
+  - Tools
+  platform: linux
+  restart_policy: unless-stopped
+  ports:
+  - 6875:80/tcp
+  volumes:
+  - container: "/config"
   bind: "!config"
-env:
-- name: PUID
+  env:
+  - name: PUID
   label: PUID
   default: '1000'
-- name: PGID
+  - name: PGID
   label: PGID
   default: '1000'
-- name: DB_HOST
+  - name: DB_HOST
   label: DB_HOST
   default: 0.0.0.0:3306
-- name: DB_USER
+  - name: DB_USER
   label: DB_USER
   default: bookstack
-- name: DB_PASS
+  - name: DB_PASS
   label: DB_PASS
   default: bookstack
-- name: DB_DATABASE
+  - name: DB_DATABASE
   label: DB_DATABASE
   default: bookstackapp
-- name: APP_URL
+  - name: APP_URL
   label: APP_URL
   default: reverse proxy domain here.
